@@ -49,4 +49,4 @@ for _, row in data.iterrows():
 
 # --- Step 6: Show or save ---
 #m  # uncomment if running in Jupyter to display inline
-m.save("plants_map.html")  # save as HTML
+m.save("index.html")  # save as HTML
