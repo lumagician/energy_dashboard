@@ -38,11 +38,12 @@ data.to_csv("out.csv")
 #plt.show()
 
 plot = figure(
-    sizing_mode="stretch_both"
+    sizing_mode="stretch_both",
+    x_axis_type="datetime",
 )
 plot.step(data["BeginningOfOperation"], data["cumsum"])
 
 html = file_html(plot, CDN, "my plot")
 
-with open("export.html", "w") as f:
+with open("index.html", "w") as f:
     f.write(html)
